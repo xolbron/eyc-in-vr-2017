@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <title>
+            2017 EYC in VR
+        </title>
+        <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
     </head>
     <body>
         <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+        <!--Rotating College Bound Sign-->
+      <a-box src="New College Bound Logo 2009.JPG" opacity="1" depth="1.5" height="1.5" width="1.5" position="0 5 3" rotation="0 0 0" color="white">
+       <a-animation attribute="rotation"
+               dur="12000"
+               fill="forwards"
+               to="0 360 0"
+               repeat="indefinite"></a-animation>
+        </a-box>
+        <a-cylinder position="0 13 3" color="#7b89a0" height="15" radius=".2"></a-cylinder>
+        
+         <a-entity position="0 1 9" rotation="0 0 0" wasd-controls>
+              <a-camera wasd-controls>
+              <a-cursor color="#ffffff"/>
+             </a-camera>
+          </a-entity>
+      
+        
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="30" height="40" src="069fd9befa7b0651c13fb733362c95ac.jpg" color="white"></a-plane>
+      <a-sky color="lightblue"></a-sky>
+      
+      <!--The Poster Wall-->
+      <a-box src="Invitation-General_Page_1.jpg" position="0 10 -24" color="white" depth="1" height="20" width="30"></a-box>
+      <!--/The Poster Wall-->
+      
+      <a-box position="0 10 16" color="white" depth="1" height="20" width="30"></a-box>
+      <a-box position="15 10 -4" color="grey" rotation="0 90 0" depth="1" height="20" width="39"></a-box>
+       <a-box position="-15 10 -4" color="lightgrey" rotation="0 90 0" depth="1" height="20" width="39"></a-box>
+       <!--The Roof-->
+           <a-box position="0 20 -4" color="red" rotation="0 90 0" depth="1" height="1" width="39"></a-box>
+           
+           
+           <!--Roof Strands-->
+               <a-box position="0 20 -19" color="red" rotation="0 0 0" depth="1" height="1" width="30"></a-box>
+               <a-box position="0 20 -14" color="red" rotation="0 0 0" depth="1" height="1" width="30"></a-box>
+               <a-box position="0 20 -9" color="red" rotation="0 0 0" depth="1" height="1" width="30"></a-box>
+               <a-box position="0 20 -4" color="red" rotation="0 0 0" depth="1" height="1" width="30"></a-box>
+               <a-box position="0 20 1" color="red" rotation="0 0 0" depth="1" height="1" width="30"></a-box>
+               <a-box position="0 20 6" color="red" rotation="0 0 0" depth="1" height="1" width="30"></a-box>
+               <a-box position="0 20 11" color="red" rotation="0 0 0" depth="1" height="1" width="30"></a-box>
+           <!--/Roof Strands-->
+       <!--/The Roof-->
+       
     </a-scene>
     </body>
 </html>
